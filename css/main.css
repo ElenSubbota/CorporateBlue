@@ -1,0 +1,289 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@font-face {
+    font-family: 'Lemon Tuesday';
+    src: url('lemontuesday-400-normal.woff2') format('woff2'), url('lemontuesday-400-normal.woff') format('woff'), url('lemontuesday-400-normal.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+   }
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'OpenSans', verdana, arial, sans-serif;
+  }
+  body {
+    font-size: 16px;
+  }
+  main {
+     display: flex;
+     flex-direction: column;
+  }
+  article {
+     flex: 5 2 12em;
+     padding: 1em;
+  }
+  nav, aside {
+     flex: 1;
+     border: 1px solid grey;
+  }
+  aside {
+
+  }
+  nav {
+     order: -1;
+  }
+  .section-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .sidebar__left_navig_list {
+    display: block;
+  }
+  .container {
+    width: 80%;
+    max-width: 1650px;
+    margin: 0 auto;
+  }
+  .content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+   .header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1% 0 1%;
+  }
+  .header__top_contacts {
+    width: 80%;
+  }
+  .header__top_contacts_list {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  .header__top_contacts_li_adress::before {
+    content: '';
+    background: url(../img/maps-and-flags.png) no-repeat;
+    display: inline;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+  }
+  .header__top_contacts_li_mail::before {
+    content: '';
+    background: url(../img/mail.png) no-repeat;
+    display: inline;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+  }
+  .header__top_contacts_li_call {
+    padding: 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #84c604;
+  }
+  .header__middle_navig_list {
+    display: flex;
+    max-width: 1600px;
+    height: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2% 0 2%;
+  }
+  .header__top_contacts_li {
+    font-family: 'Open Sans';
+    color: rgba(1, 1, 1, 1);
+  }
+  .header__middle_navig_list_li  {
+    font-family: 'Open Sans';
+    color: rgba(1, 1, 1, 1);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .header__middle_navig_list_li_menu::after {
+    content: "";
+    display: inline;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    margin: 9px 0 0 10px;
+  }
+  .header-bottom {
+    padding-top: 37%;
+    background-image: url(../img/header_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header-bottom__text  {
+    position: relative;
+    margin-top: -25%;
+    padding-left: 3%;
+  }
+  .header-bottom__text_title {
+    width: 400px;
+    font-family: 'Lemon Tuesday';
+    color: rgba(132, 198, 4, 1);
+    font-size: 10vh;
+    line-height: 1;
+  }
+  .header-bottom__text_sale {
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    background-color: rgba(188, 32, 36, 1);
+    border-radius: 50%;
+    top: -5%;
+    left: 40%;;
+  }
+  .header-bottom__text_sale_p {
+    font-size: 1.5em;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffff;
+    padding-top: 45px;
+  }
+  .header-bottom__text_sale_time {
+    font-family: 'Open Sans';
+    font-size: 2.3vh;
+    color: #ffff;
+    padding: 3% 0 3% 0;
+  }
+  .header-bottom__text_butt_style {
+    width: 250px;
+    height: 52px;
+    background-color: rgba(253, 79, 16, 1);
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5vh;
+    color: #ffff;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+   }
+   .menu-row__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0 5% 0;
+    font-family: 'Lemon Tuesday';
+    font-size: 3em;
+    color: rgba(50, 80, 90, 1);
+   }
+   .menu-row__title::before {
+     content: '';
+     width: 115px;
+     height: 50px;
+     background-image: url(../img/befor-sets.png);
+     background-repeat: no-repeat;
+     padding: 0 35px 0 0;
+    }
+   .menu-row__title::after {
+     content: '';
+     width: 115px;
+     height: 50px;
+     background-image: url(../img/after-sets.png);
+     background-repeat: no-repeat;
+     padding: 0 35px 0 0;
+   }
+   .menu-list__preview {
+     background-color: #ffff;
+     border-radius: 10px 10px 5px 5px;
+     box-shadow: 0px 4px 29px 0px rgba(0, 0, 0, 0.08);
+   }
+   .food-name {
+     font-size: 1.125rem;
+     font-weight: 800;
+     padding: 30px 0 20px 0;
+   }
+   .menu-list__preview_header {
+     position: relative;
+     text-align: center;
+   }
+   .menu-info {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     padding:  0 0 25px 0;
+   }
+   .menu-price {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+   }
+   .item-quantity__btn {
+     position: absolute;
+     width: 15px;
+     height: 15px;
+     border: 1px solid red;
+     border-radius: 50%;
+   }
+   .item-quantity__btn--small {
+
+   }
+   .menu-list__preview_footer_btn-wrap {
+     display:flex;
+     justify-content: center;
+     flex-direction: row;
+     padding: 30px 30px 35px;
+   }
+   .menu-list__btn_add-t-card {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 195px;
+     height: 40px;
+     background-color: #fd4f10;
+     text-transform: uppercase;
+     color: #ffff;
+     border-radius: 5px;
+   }
+   .menu-list__btn_add-t-card--text::after {
+     content: '';
+     position: absolute;
+     width: 23px;
+     height: 21px;
+     background-image: url(../img/online-shopping-cart.png);
+     background-repeat: no-repeat;
+     /* padding: 0 0 0 20px; */
+   }
+
+
+  footer {
+      flex: 0 0 5em;
+      background-color: #37474f;
+   }
+
+  @media screen and (min-width: 600px) {
+
+      body{
+          min-height: 100vh;
+      }
+      main {
+          flex-direction: row;
+          min-height: 100%;
+          flex: 1 1 auto;
+      }
+  }
